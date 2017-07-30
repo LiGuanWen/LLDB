@@ -36,6 +36,5 @@ Pod::Spec.new do |s|
 
   #s.dependency "AFNetworking"
   # s.dependency "LLKit", "~> 1.0.0"
-  #s.dependency "SDWebImage","~> 3.7.6"
-
+  s.dependency "WCDB"
 end

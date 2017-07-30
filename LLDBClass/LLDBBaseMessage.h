@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "WCTCoding.h"
-//#import "WCTCodingMacro.h"
-#import <WCDB/WCDB.h>
+#import "WCTCoding.h"
+#import "WCTCodingMacro.h"
+//#import <WCDB/WCDB.h>
 
 //Message.h
 @interface LLDBBaseMessage : NSObject <WCTTableCoding>
