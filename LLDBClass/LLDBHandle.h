@@ -165,4 +165,5 @@
                                            offset:(const WCTOffset &)offset
                                            dbPath:(NSString *)dbPath;
 
+
 @end

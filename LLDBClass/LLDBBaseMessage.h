@@ -1,5 +1,5 @@
 //
-//  Message.h
+//  LLDBBaseMessage.h
 //  Pods
 //
 //  Created by Lilong on 2017/7/23.
@@ -12,7 +12,7 @@
 //#import <WCDB/WCDB.h>
 
 //Message.h
-@interface Message : NSObject <WCTTableCoding>
+@interface LLDBBaseMessage : NSObject <WCTTableCoding>
 
 @property int localID;
 @property(retain) NSString *content;
