@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		68D20E8A09050CC769B91579 /* libPods-LLDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFF98FB6DC755EF8A06B0A2 /* libPods-LLDB.a */; };
 		FDC32D541F234CA40063FC9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC32D531F234CA40063FC9A /* main.m */; };
-		FDC32D571F234CA40063FC9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDC32D561F234CA40063FC9A /* AppDelegate.mm */; };
+		FDC32D571F234CA40063FC9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC32D561F234CA40063FC9A /* AppDelegate.m */; };
 		FDC32D5A1F234CA40063FC9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC32D591F234CA40063FC9A /* ViewController.m */; };
 		FDC32D5D1F234CA40063FC9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC32D5B1F234CA40063FC9A /* Main.storyboard */; };
 		FDC32D601F234CA40063FC9A /* LLDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDC32D5E1F234CA40063FC9A /* LLDB.xcdatamodeld */; };
@@ -43,7 +43,7 @@
 		FDC32D4F1F234CA40063FC9A /* LLDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC32D531F234CA40063FC9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDC32D551F234CA40063FC9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FDC32D561F234CA40063FC9A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		FDC32D561F234CA40063FC9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FDC32D581F234CA40063FC9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FDC32D591F234CA40063FC9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FDC32D5C1F234CA40063FC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				FDC32D551F234CA40063FC9A /* AppDelegate.h */,
-				FDC32D561F234CA40063FC9A /* AppDelegate.mm */,
+				FDC32D561F234CA40063FC9A /* AppDelegate.m */,
 				FDC32D581F234CA40063FC9A /* ViewController.h */,
 				FDC32D591F234CA40063FC9A /* ViewController.m */,
 				FDC32D5B1F234CA40063FC9A /* Main.storyboard */,
@@ -237,7 +237,6 @@
 				TargetAttributes = {
 					FDC32D4E1F234CA40063FC9A = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = C6Z4D9LT34;
 						ProvisioningStyle = Automatic;
 					};
 					FDC32D6A1F234CA40063FC9A = {
@@ -367,7 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC32D5A1F234CA40063FC9A /* ViewController.m in Sources */,
-				FDC32D571F234CA40063FC9A /* AppDelegate.mm in Sources */,
+				FDC32D571F234CA40063FC9A /* AppDelegate.m in Sources */,
 				FDC32D541F234CA40063FC9A /* main.m in Sources */,
 				FDC32D601F234CA40063FC9A /* LLDB.xcdatamodeld in Sources */,
 			);
@@ -521,11 +520,13 @@
 			baseConfigurationReference = 233F0A5CA1B04D17645327CD /* Pods-LLDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LLDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LLDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -534,11 +535,13 @@
 			baseConfigurationReference = A3242D2D761BE6E875D010AB /* Pods-LLDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LLDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liguanwen.LLDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

@@ -12,6 +12,7 @@
 //Message.mm
 @implementation LLDBBaseMessage
 
+
 //使用WCDB_IMPLEMENTATIO宏在类文件定义绑定到数据库表的类。
 WCDB_IMPLEMENTATION(LLDBBaseMessage)
 

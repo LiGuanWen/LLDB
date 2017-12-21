@@ -8,12 +8,12 @@
 
 #import "AppDelegate.h"
 //#import "testMessage.h"
-#import "LLDBUtility.h"
-#import <WCDB/WCDB.h>
-
-
+//#import "LLDBUtility.h"
+//#import <WCDB/WCDB.h>
 
 #import "LLDBHandle.h"
+
+#import "LLDBMsg.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +22,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
 //    NSString *path = [LLDBHandle getCreatDBFilepathWithDBName:@"diqidaimu.db"];
 //    NSString *tableName = @"message";
 //    [LLDBHandle createTableAndIndexesOfName:@"message" withClass:testMessage.class dbPath:path];
@@ -36,7 +35,7 @@
 //    model2.localID = 2;
 //    model2.createTime = [NSDate new];
 //    [LLDBHandle insertObject:model2 into:tableName dbPath:path];
-//    
+//
 //    NSArray *sss = [LLDBHandle getAllObjectsOfClass:testMessage.class fromTable:tableName dbPath:path];
 //    
 //    NSArray *arr = [LLDBHandle getObjectsOfClass:testMessage.class fromTable:tableName where:testMessage.localID > 1 dbPath:path];

@@ -74,6 +74,17 @@
  */
 + (BOOL)deleteAllObjectsFromTable:(NSString *)tableName
                            dbPath:(NSString *)dbPath;
+/**
+ 删除数据
+ 
+ @param tableName 表格名称
+ @param condition where条件
+ @param dbPath 数据库路径
+ @return 是否成功
+ */
++ (BOOL)deleteObjectsFromTable:(NSString *)tableName
+                         where:(const WCTCondition &)condition
+                        dbPath:(NSString *)dbPath;
 
 /**
  删除数据
